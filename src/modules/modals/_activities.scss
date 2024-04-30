@@ -1,40 +1,40 @@
-.theme-dark .root-CyPAbQ{
+.theme-dark .root__9b46d{
     margin-top: 0;
     background-color: transparent;
 
-    .shelfTopBackground-R55ED9{
+    .shelfTopBackground__769cf{
         display: none;
     }
 
     // Header
-    .headerTextContainer-16tB2v{
+    .headerTextContainer__03417{
         align-items: unset;
     }
-    .activityShelfTitle-1rkbSI{
+    .activityShelfTitle_a3dd51{
         justify-content: unset;
-        .heading-xl-extrabold-3nqyla{
+        .heading-xl-extrabold__8ed5c{
             @include TypeSubtitle;
         }
     }
-    .text-sm-normal-AEQz4v{
+    .text-sm-normal__95a78{
         margin-top: 4px;
     }
 
     // Content
-    .scrollTierBackground-BnWR8k{
+    .scrollTierBackground__89f3e{
         background-color: $LayerFillColorAlt;
     }
 
-    .activityItem-1Z9CTr{
+    .activityItem__2bb92{
         background-color: $CardBackgroundFillColorDefault;
     }
-    .activityTitleText-3LZ9o5{
+    .activityTitleText__46dea{
         @include TypeBodyStrong;
     }
-    .activitySubtitleText-r0WHTk{
+    .activitySubtitleText__221fc{
         @include TypeCaption;
     }
-    .activityTag-3C3YK5{
+    .activityTag__1f89a{
         padding: 2px 8px;
         background-color: $SystemFillColorSolidNeutralBackground;
         @include TypeCaption;

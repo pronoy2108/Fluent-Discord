@@ -1,14 +1,14 @@
-.theme-dark .container-KM8BU6{
-    .scroller-2GkvCq{
+.theme-dark .container_f8ef5d{
+    .scroller__9a4f3{
         background-color: $CardBackgroundFillColorDefault;
     }
 
-    .reactionDefault-1Sjj1f{
+    .reactionDefault_de3361{
         &:hover{
             background-color: $SubtleFillColorSecondary;
         }
     }
-    .reactionSelected-1aMb2K{
+    .reactionSelected__16345{
         position: relative;
         background-color: $SubtleFillColorSecondary;
         &::before{
@@ -23,21 +23,17 @@
         }
     }
 
-    .reactors-1VXca7{
+    .reactors__0f305{
         background-color: transparent;
     }
 
-    .nickname-1PaREw{
+    .name__7b681{
         @include TypeBody;
         color: $TextFillColorPrimary;
     }
-    .nameTag-H6kSJ0{
+    .username__1b2de{
         opacity: 1;
         @include TypeBody;
         color: $TextFillColorSecondary;
-    }
-    .discriminator-1DCM-o{
-        padding-left: .5ch;
-        color: $TextFillColorTertiary;
     }
 }

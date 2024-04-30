@@ -1,21 +1,16 @@
-// Background in thread members list
-.members-3WRCEx, .members-3WRCEx>div{
-    background-color: transparent;
-}
+.theme-dark .container_f79ab4{
+    background: $LayerOnMicaBaseAltFillColor;
+    border-left: 1px solid $CardStrokeColorDefault;
 
-.theme-dark .container-2o3qEW{
-    background-color: $LayerFillColorDefault;
-
-    .members-3WRCEx,
-    .members-3WRCEx > div{
+    .members__573eb{
         background-color: transparent;
     }
 
     // Group header
-    .membersGroup-2eiWxl{
+    .membersGroup_cad095{
         padding: 20px 8px 0 15px;
     }
-    .container-q97qHp{
+    .container__43554{
         color: $TextFillColorPrimary;
         @include TypeBodyStrong;
         text-transform: none;
@@ -23,22 +18,23 @@
 
 
     // Member
-    .container-1oeRFJ{
+    .container_a48b21{
         margin-left: 7px;
+        background: transparent;
         color: $TextFillColorPrimary;
         // Greyscale offline avatars
-        &.offline-22aM7E{
-            .avatar-6qzftW{
+        &.offline__55fab{
+            .avatar__6337f{
                 filter: grayscale(100%);
             }
             &:hover{
-                .avatar-6qzftW{
+                .avatar__6337f{
                     filter: grayscale(0%);
                 }
             }
         }
     }
-    .layout-1qmrhw{
+    .layout_bb8e67{
         border: 1px solid transparent;
         &:hover{
             background-color: $SubtleFillColorSecondary;
@@ -63,7 +59,7 @@
         }
     }
     // Selected (user popout open)
-    .selected-1-Z6gm .layout-1qmrhw{
+    .selected__7f4cb .layout_bb8e67{
         background-color: $SubtleFillColorSecondary;
         border-color: $SubtleFillColorSecondary;
         &::before{
@@ -74,11 +70,11 @@
         }
     }
     // Username
-    .name-3Vmqxm{
+    .name__7afe8{
         @include TypeBody;
     }
     // Activity
-    .activity-2EQDZv{
+    .activity_bafb94{
         @include TypeCaption;
         color: $TextFillColorSecondary;
         strong{
@@ -87,18 +83,8 @@
     }
 }
 
-// Empty state
-.theme-dark .members-3WRCEx{
-    &.emptyState-2DwxJe{
-        .emptyStateHeader-3X-dcc{
-            display: none;
-        }
-        .emptyStateIconContainer-1Jbvk4{
-            background-color: transparent;
-        }
-        .emptyStateSubtext-hyd30M{
-            background-color: transparent;
-            color: $TextFillColorSecondary;
-        }
-    }
+// Remove avatar borders/decorations
+// This also removes them from user profile popouts and modals, but not cozy chat.
+.avatarDecoration_cf681a{
+    display: var(--fluent-show-avatar-decorations);
 }

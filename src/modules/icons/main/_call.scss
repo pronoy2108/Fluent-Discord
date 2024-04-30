@@ -1,4 +1,4 @@
-html[lang^="en-"].theme-dark .wrapper-1gVUIN .controlSection-1mNixL .button-ejjZWC{
+html[lang^="en-"].theme-dark .wrapper__4d4fe .button__581d0{
     &[aria-label*="Camera"]::before,
     &[aria-label*="Join Video Call"]::before{
         content: "\E156"; // WebCam
@@ -9,10 +9,10 @@ html[lang^="en-"].theme-dark .wrapper-1gVUIN .controlSection-1mNixL .button-ejjZ
     &[aria-label="Stop Streaming"]::before{
         content: "\EA14"; // DisconnectDisplay
     }
-    &[aria-label="Unmute"]::before{
+    &[aria-label="Turn On Microphone"]::before{
         content: "\EC54"; // MicOff
     }
-    &[aria-label="Mute"]::before{
+    &[aria-label="Turn Off Microphone"]::before{
         content: "\E720"; // Microphone
     }
     &[aria-label="Disconnect"]::before{

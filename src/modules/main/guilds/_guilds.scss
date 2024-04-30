@@ -1,29 +1,19 @@
-.theme-dark .platform-win .scroller-3X7KbA{
-    padding: 0;
-    background-color: transparent;
-}
-
-.theme-dark .guilds-2JjMmN{
+.theme-dark .guilds__2b93a{
     width: 48px;
     background-color: transparent;
 
     // When a call is in fullscreen, set guilds width to 0
-    &.hidden-10MsGQ{
+    &.hidden__7c832{
         width: 0;
     }
 
-    // TODO - 2022-06-08: Find out if this is still required
-    .listItem-3SmSlK:hover .pill-2RsI5Q:empty{
-        display: none !important;
-    }
-
-    .listItem-3SmSlK{
+    .listItem__48528{
         margin: 0;
         width: 48px;
 
         // Hover state
-        &:hover .wrapper-3kah-n::before,
-        .wrapper-3kah-n.selected-1Drb7Z::before{
+        &:hover .wrapper__8436d::before,
+        .wrapper__8436d.selected_ae80f7::before{
             content: "";
             position: absolute;
             width: 40px;
@@ -34,16 +24,14 @@
             border-radius: 4px;
             z-index: -1;
         }
-        &:hover .wrapper-3kah-n::before{
+        &:hover .wrapper__8436d::before{
             box-shadow: inset 0 0 0 1px $SubtleFillColorSecondary;
         }
 
         // Pill
-        .pill-2RsI5Q, // Guild
-        .pill-L_aLMQ, // Home
-        .pill-22lZHo, // DM
-        .pill-1NRFie{
-            .item-2LIpTv{
+        & > div[class^="pill_"]{
+            z-index: 1;
+            .item_f9d377{
                 width: 3px;
                 height: 16px !important;
                 margin-left: 4px;
@@ -67,16 +55,16 @@
             }
         }
         // Guild icon
-        .wrapper-2PSQCG{
+        .wrapper__9916c{
             svg foreignObject{
                 mask: none;
             }
-            .icon-3AqZ2e{
+            .icon__11cf1{
                 width: var(--fluent-guilds-icon-size);
                 height: auto;
                 border-radius: 50%;
             }
-            .acronym-2zrAHN{
+            .acronym_fb7739{
                 width: 24px;
                 height: 24px;
                 background-color: transparent;
@@ -85,44 +73,10 @@
             }
         }
 
-        // Inbox
-        // NOTE 2022-03-07 - Provides compat for updated Inbox icon when Experiment 2022-01_inbox_redesign is on.
-        .iconButton-2z1iK7 {
-            width: 48px;
-            height: 48px;
-            &[data-list-item-id="guildsnav___inbox-button"] {
-                background-color: transparent;
-                &::before{
-                    content: "\E715"; // Mail
-                    color: $TextFillColorPrimary;
-                    @include FontIconFluent;
-                    font-size: 16px;
-                }
-                svg{
-                    display: none;
-                }
-            }
-            &:hover::after,
-            &.selected-1WnveH::after{
-                content: "";
-                position: absolute;
-                width: 40px;
-                height: 40px;
-                top: 4px;
-                left: 4px;
-                background-color: $ControlFillColorSecondary;
-                border-radius: 4px;
-                z-index: -1;
-            }
-            &.selected-1WnveH:hover::after{
-                box-shadow: inset 0 0 0 1px $SubtleFillColorSecondary;
-            }
-        }
-
         // Home
-        .wrapper-3kah-n{
+        .wrapper__8436d{
             &[data-list-item-id="guildsnav___home"]{
-                .childWrapper-1j_1ub{
+                .childWrapper_a6ce15{
                     background-color: transparent;
                     &::before{
                         content: "\E80F"; // Home
@@ -137,16 +91,16 @@
             }
         }
         // Remove Home :active transform
-        .blobContainer-ikKyFs:active{
+        .blobContainer_c44493:active{
             transform: none;
         }
 
         // Separator
-        .guildSeparator-a4uisj{
+        .guildSeparator__75928{
             display: none;
         }
         // Add server/Server Discovery icons
-        .circleIconButton-1VxDrg{
+        .circleIconButton__05cf2{
             background-color: transparent;
             color: #FFF;
             &[aria-label]{
@@ -157,7 +111,7 @@
             }
         }
         // Offline
-        .guildsError-2gzNaD{
+        .guildsError_f4b0bc{
             background-color: $SystemFillColorCritical;
             border: 0;
             border-radius: 0;
@@ -165,7 +119,7 @@
             font-weight: 400;
         }
         //badge
-        .iconBadge-32fMme{
+        .iconBadge__19638{
             background-color: $SystemFillColorSolidNeutral;
             svg{
                 width: 12px;
@@ -173,28 +127,28 @@
                 color: $TextOnAccentFillColorPrimary;
             }
         }
-        .lowerBadge-3j0ZAg,
-        .upperBadge-1d6YsW{
+        .lowerBadge_e89e22,
+        .upperBadge__00ad0{
             right: 6px;
             transform: none !important; // Override inline
         }
-        .upperBadge-1d6YsW{
+        .upperBadge__00ad0{
             top: 6px;
         }
-        .lowerBadge-3j0ZAg{
+        .lowerBadge_e89e22{
             bottom: 6px;
             z-index: 1;
         }
-        .numberBadge-37OJ3S{
+        .numberBadge__40d6f{
             background-color: $SystemFillColorCritical !important; // Override inline
             @include TypeCaption;
             color: $TextOnAccentFillColorPrimary;
         }
     }
     // Folders
-    .wrapper-38slSD{
-        .listItem-3SmSlK{
-            .wrapper-2PSQCG{
+    .wrapper__832f2{
+        .listItem__48528{
+            .wrapper__9916c{
                 svg{
                     mask{
                         display: none;
@@ -208,11 +162,11 @@
         }
 
         // Round bottom of last guild in folder
-        ul[id^="folder-items"] .listItem-3SmSlK:last-of-type{
+        ul[id^="folder-items"] .listItem__48528:last-of-type{
             border-radius: 0 0 24px 24px;
         }
     }
-    .folder-241Joy{
+    .folder__17546{
         background-color: transparent;
         &:hover::before{
             content: "";
@@ -227,26 +181,26 @@
             z-index: -1;
         }
     }
-    .folderIconWrapper-1oRIZr{
+    .folderIconWrapper__11165{
         background-color: transparent !important; // Override inline
         border-radius: 0;
     }
-    .closedFolderIconWrapper-3tRb2d{
+    .closedFolderIconWrapper__722d5{
         padding: 8px;
     }
-    .expandedFolderBackground-1kSAf6{
+    .expandedFolderBackground_b1385f{
         width: 40px;
         top: 4px;
         bottom: 4px;
         left: 4px;
         background-color: $SubtleFillColorSecondary;
         border-radius: 4px;
-        &.collapsed-uGXEbi{
+        &.collapsed__98ad5{
             background-color: transparent;
             box-shadow: none;
         }
     }
-    .expandedFolderIconWrapper-3RwQpD{
+    .expandedFolderIconWrapper__324c1{
         &::before{
             content: "\F12B"; // FolderHorizontal
             @include FontIconFluent;
@@ -256,19 +210,15 @@
         }
     }
 
-    // Nitro marketing
-    .listItem-3SmSlK ~ div[aria-label] + .listItem-3SmSlK{
-        display: none;
-    }
-
     // Connected to voice
-    .iconBadge-32fMme.participating-2Z81oO{
+    .iconBadge__19638.isCurrentUserConnected__3bd70{
         background-color: $SystemFillColorSuccess;
         &::before{
             content: "\F0B9"; // Connected
             @include FontIconFluent;
             color: $TextOnAccentFillColorPrimary;
             font-size: 10px;
+            line-height: 1.5;
         }
         svg{
             display: none;
@@ -276,10 +226,10 @@
     }
 
     // Unread notification bars
-    .unreadMentionsIndicatorBottom-3RJMnQ,
-    .unreadMentionsIndicatorTop-2bTgUU{
+    .unreadMentionsIndicatorBottom__9351c,
+    .unreadMentionsIndicatorTop__153ad{
         width: 48px;
-        .bar-2eAyLE{
+        .bar_edc096{
             background-color: $SystemFillColorCriticalBackground;
         }
         span{
@@ -296,14 +246,14 @@
         }
     }
 
-    .unreadMentionsIndicatorBottom-3RJMnQ{
+    .unreadMentionsIndicatorBottom__9351c{
         span{
             &::before{
                 content: "\EDDC"; // CaretDownSolid8
             }
         }
     }
-    .unreadMentionsIndicatorTop-2bTgUU{
+    .unreadMentionsIndicatorTop__153ad{
         span{
             &::before{
                 content: "\EDDB"; // CaretUpSolid8

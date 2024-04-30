@@ -1,15 +1,15 @@
-.theme-dark .picker-20lcBA{
+.theme-dark .picker__6dca7{
     background: $MicaBackgroundFillColorBase;
     backdrop-filter: blur(16px);
     border: 1px solid $SurfaceStrokeColorDefault;
     border-radius: 8px;
 
     // Search box
-    .header-3YNgrp{
+    .header__93ab0{
         box-shadow: none;
     }
     // Volume control
-    .settingsClickArea-1vKB0J{
+    .settingsClickArea__2839d{
         width: 32px;
         height: 32px;
         border-width: 1px;
@@ -28,14 +28,14 @@
     }
 
     // Servers
-    .categoryList-iuh2t0{
+    .categoryList__2f64f{
         background-color: $SolidBackgroundFillColorBase;
     }
 
     // Sounds
     // Section header
-    .sectionHeader-1-lTK9{
-        .sectionTitle-1T_AdY{
+    .sectionHeader_d974fe{
+        .sectionTitle__1a48e{
             @include TypeBodyStrong;
             text-transform: none;
             color: $TextFillColorPrimary;
@@ -43,7 +43,7 @@
     }
 
     // Sound
-    .soundButton-2P2Ua2{
+    .soundButton__845c7{
         background-color: $ControlFillColorDefault;
         border-width: 1px;
         border-style: outset;
@@ -56,28 +56,28 @@
         &:active{
             background-color: $ControlFillColorTertiary;
         }
-        .soundName-3m5jfy{
+        .ssoundName__5285b{
             @include TypeBody;
         }
-        .buttonOverlayBackground-3fyfGX{
+        .buttonOverlayBackground__9265a{
             background-color: $ControlFillColorInputActiveBrush;
             opacity: 1;
         }
     }
 
     // keybind reminder
-    .keybindHint-2zIIxQ{
+    .keybindHint__28b43{
         margin: 8px;
         padding: 8px 16px;
         background-color: $SystemFillColorAttentionBackground;
         border: 1px solid $CardStrokeColorDefault;
         border-radius: 4px;
-        .warningIcon-1SDACq{
+        .warningIcon__63992{
             color: $SystemFillColorAttention;
             // Wrong icon used for this type of info bar, so rotate it 180deg to change it into an 'i'
             transform: rotate(180deg);
         }
-        .keybindHintText-3G9ZG4{
+        .keybindHintText__8244b{
             @include TypeBody;
         }
     }

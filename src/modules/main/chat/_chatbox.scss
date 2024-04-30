@@ -1,14 +1,15 @@
-.theme-dark .form-3gdLxP, // Main chatbox
+.theme-dark .form_d8a4a1, // Main chatbox
 .theme-dark .submitContainer-1DHMA0{ // Thread start
     margin-top: 0;
     padding-right: 17px;
     padding-left: 15px;
-    // Remove gradient on left
-    &::before{
+    // Remove gradient on left and right
+    &::before,
+    &::after{
         display: none;
     }
 
-    .channelTextArea-1FufC0,
+    .channelTextArea_c2094b,
     .channelTextArea-1VQBuV{
         margin-bottom: 8px;
         background-color: $ControlFillColorDefault;
@@ -24,22 +25,22 @@
             border-bottom-color: $AccentBase;
         }
     }
-    .scrollableContainer-15eg7h{
+    .scrollableContainer_ff917f{
         background-color: transparent;
         border-radius: 4px;
         overflow-y: auto;
     }
 
-    .sansAttachButton-1ERHue{
+    .sansAttachButton__5f863{
         padding-left: 0;
     }
 
     // User's input text
-    .textArea-2CLwUE{
+    .textArea_a86690{
         height: 45px;
         min-height: 45px;
     }
-    .slateTextArea-27tjG0{
+    .slateTextArea_b19976{
         right: 8px;
         left: 8px;
         color: $TextFillColorPrimary;
@@ -50,7 +51,7 @@
 
 
     // Upload button
-    .attachButton-_ACFSu{
+    .attachButton__5f6dc{
         width: 32px;
         height: 32px;
         margin: 6px 0 0 6px;
@@ -70,8 +71,24 @@
                 color: $TextFillColorPrimary;
             }
         }
-        .contents-3NembX{
+        .contents__322f4{
             display: none;
+        }
+    }
+    // Upload button when command is entered
+    .hasConnectedBar__7d21e .attachButton__5f6dc{
+        // Hide our upload icon
+        &::before{
+            content: "";
+        }
+        // Position the slash icon
+        .icon__58cfe{
+            padding: 4px;
+        }
+        // Remove hover effects
+        &:hover{
+            background-color: transparent;
+            border-color: transparent;
         }
     }
 
@@ -90,7 +107,7 @@
     .expression-picker-chat-input-button{
         margin: 6px 4px 0 0;
         align-items: flex-start;
-        .button-ejjZWC{
+        .button__581d0{
             height: 32px;
             width: 32px;
             border: 1px solid transparent;
@@ -101,7 +118,7 @@
             }
             &:hover,
             &.active-z80xEj,
-            &.emojiButtonHovered-s44uQ8{
+            &.emojiButtonHovered__7519c{
                 background-color: $ControlFillColorDisabled;
                 border-color: $ControlStrokeColorDefault;
                 &::before{
@@ -111,48 +128,48 @@
         }
 
         // Always hide the emoji button icon since it can be directly selected
-        .emojiButton-1fMsf3{
-            .contents-3NembX{
+        .emojiButton__176c8{
+            .contents__322f4{
                 display: none;
             }
         }
 
         // Replace sticker icon
-        .contents-3NembX.stickerButton-1-nFh2{
+        .contents__322f4.stickerButton_c02bc0{
             &::before{
                 content: "\F4AA"; // Sticker2
                 @include FontIconFluent;
                 font-size: 18px;
             }
-            svg{
-                display: none;
+            .lottieIcon_c7076c{
+                display: none !important; // Override in-line
             }
         }
 
         // Replace GIF icon
-        .button-ejjZWC[aria-label*="GIF"]{
-            .contents-3NembX{
+        .button__581d0[aria-label*="GIF"]{
+            .contents__322f4{
                 &::before{
                     content: "\F4A9"; // GIF
                     @include FontIconFluent;
                     font-size: 18px;
                 }
-                svg{
-                    display: none;
+                .lottieIcon_c7076c{
+                    display: none !important; // Override in-line
                 }
             }
         }
 
     }
-    .buttons-uaqb-5{
+    .buttons__7ecff{
         height: unset;
         margin-right: 0;
         // Remove gift
-        & > .button-ejjZWC{
+        & > .button__581d0{
             display: none;
         }
         // Set a static emoji icon
-        .emojiButton-3FRTuj{
+        .emojiButton__176c8{
             margin: 0 4px 0 0;
             &::before{
                 content: "\E76E"; //Emoji2
@@ -163,13 +180,13 @@
         }
 
         // Send button
-        .separator-3ng7S5{
+        .separator__666aa{
             margin-top: 6px;
             margin-left: -4px;
             &::before{
                 display: none;
             }
-            .button-y6hemj{
+            .button__581d0{
                 width: 32px;
                 height: 32px;
                 margin-right: 4px;
@@ -185,7 +202,7 @@
                 &:hover:not(:disabled):before{
                     color: $TextFillColorPrimary;
                 }
-                .contents-3NembX{
+                .contents__322f4{
                     display: none;
                 }
             }
@@ -193,7 +210,7 @@
     }
 
     // Is Typing
-    .typing-2J1mQU{
+    .typing__6fd1d{
         height: 20px;
         top: -20px;
         right: 16px;
@@ -217,27 +234,27 @@
             }
         }
         // Slowmode font-weight
-        .cooldownWrapper-2k1jHK{
+        .cooldownWrapper__193b2{
             font-weight: normal;
         }
         // Fix position of countdown timer
-        .text-3S7XCz:not(:empty) + .cooldownWrapper-2k1jHK{
+        .text_eb454c:not(:empty) + .cooldownWrapper__193b2{
             margin-bottom: 14px;
         }
     }
 
     // Various chatbox states
     // Announce channel follow
-    .wrapper-2SplAX{
+    .wrapper__57349{
         margin-bottom: 16px;
         background-color: $ControlFillColorDisabled;
         border: 1px solid $ControlStrokeColorDefault;
         // Remove image
-        .content-2M_BlY{
+        .content__98536{
             img{
                 display: none;
             }
-            .title-Do_30w{
+            .title__3b5e7{
                 color: $TextFillColorDisabled !important; // Override inline
                 @include TypeBody;
             }
@@ -245,18 +262,18 @@
     }
 
     // No permission
-    .textAreaDisabled-10ObTX{
-        .placeholder-1_mJY1{
+    .textAreaDisabled__38376{
+        .placeholder_dec8c7{
             color: $TextFillColorSecondary;
             @include TypeBody;
         }
     }
 
     // Showing command help
-    .attachedBars-2BCP3l{
+    .attachedBars_c1606a{
         background-color: $CardStrokeColorDefaultSolid;
         border-radius: 4px 4px 0 0;
-        .title-158kHv{
+        .name__12c49{
             @include TypeBody;
         }
         .option-Tt7anD{
@@ -276,12 +293,12 @@
     }
 
     // Replying to message
-    .clipContainer-31nYlH{
+    .clipContainer_ab9cf6{
         margin-top: 0;
     }
-    .replyBar-1oi75v{
+    .replyBar_ed6afc{
         background-color: transparent;
-        .replyLabel-WWnhHi{
+        .replyLabel__84289{
             color: $TextFillColorPrimary;
         }
     }

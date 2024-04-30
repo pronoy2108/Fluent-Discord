@@ -1,9 +1,8 @@
-.theme-dark .members-3WRCEx{
+.theme-dark .members__573eb{
     background-color: $LayerFillColorDefault;
-    border-left: 1px solid $CardStrokeColorDefault;
 
     // Group header
-    .membersGroup-2eiWxl{
+    .membersGroup_cad095{
         padding: 20px 8px 0 16px;
         color: $TextFillColorPrimary;
         @include TypeBodyStrong;
@@ -11,37 +10,37 @@
     }
 
      // Member
-     .container-1oeRFJ{
+     .container_a48b21{
         background-color: transparent;
         color: $TextFillColorPrimary;
         // Greyscale offline avatars
-        &.offline-22aM7E{
-            .avatar-6qzftW{
+        &.offline__55fab{
+            .avatar__6337f{
                 filter: grayscale(100%);
             }
             &:hover{
-                .avatar-6qzftW{
+                .avatar__6337f{
                     filter: grayscale(0%);
                 }
             }
         }
-        .layout-1qmrhw{
+        .layout_bb8e67{
             border: 1px solid transparent;
             &:hover{
                 background-color: $SubtleFillColorSecondary;
                 border-color: $SubtleFillColorSecondary;
             }
         }
-        &[aria-expanded=true] .layout-1qmrhw{
+        &[aria-expanded=true] .layout_bb8e67{
             background-color: $SubtleFillColorSecondary;
             border-color: $SubtleFillColorSecondary;
         }
         // Username
-        .name-3Vmqxm{
+        .name__7afe8{
             @include TypeBody;
         }
         // Activity
-        .activity-2EQDZv{
+        .activity_bafb94{
             @include TypeCaption;
             color: $TextFillColorSecondary;
             strong{

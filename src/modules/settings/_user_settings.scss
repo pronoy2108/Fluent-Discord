@@ -1,4 +1,4 @@
-.theme-dark .contentColumn-1C7as6{
+.theme-dark .contentColumn__5f80b{
     // Misc
     .notice-1Qe0b_{
         background-color: $SystemFillColorAttentionBackground;
@@ -12,19 +12,19 @@
         }
     }
     // Remove dividers
-    .divider-3nqZNm{
+    .divider__14bb6{
         display: none;
     }
 
     // My Account
-    .accountProfileCard-lbN7n-{
+    .accountProfileCard__744d8{
         background-color: transparent;
         // Remove coloured banner
-        .bannerSVGWrapper-2CLfzN{
+        .bannerSVGWrapper__8a38c{
             display: none;
         }
 
-        .userInfo-regn9W{
+        .userInfo_fb7651{
             height: 68px;
             margin: 0 0 32px 0;
             padding: 0;
@@ -32,7 +32,7 @@
             gap: 16px;
             align-items: center;
             // Avatar
-            .avatar-3mTjvZ{
+            .avatar__6c108{
                 width: 64px !important; // Override inline
                 height: 64px !important; // Override inline
                 position: relative;
@@ -55,20 +55,20 @@
                     }
                 }
             }
-            .button-ejjZWC{
+            .button__581d0{
                 display: none;
             }
         }
 
         // Body
-        .background-3d_SjE{
+        .background__4e802{
             margin: 0;
             padding: 0;
             background-color: transparent;
         }
-        .fieldList-in8WkP{
+        .fieldList__4e6dd{
             background-color: transparent;
-            .field-21XZwa{
+            .field__69fa0{
                 min-height: 64px;
                 padding: 0 16px 0 48px;
                 margin: 0 0 4px 0;
@@ -76,26 +76,26 @@
                 border: 1px solid $CardStrokeColorDefault;
                 border-radius: 4px;
 
-                .constrainedRow-3y91Xf{
+                .constrainedRow__72f7a{
                     align-items: center;
                 }
 
-                .fieldTitle-2g5r_V{
+                .fieldTitle_f182ed{
                     margin-bottom: 0;
                     @include TypeBody;
                 }
-                .text-md-normal-2rFCH3{
+                .text-md-normal__6e567{
                     @include TypeCaption;
                     color: $TextFillColorSecondary !important;
                 }
 
                 // Override the reveal button
-                .button-ejjZWC.lookLink-13iF2K{
+                .button__581d0.lookLink_a2da25{
                     min-width: unset;
                     padding: 0 0 0 4px;
                     background-color: unset;
                     border: unset;
-                    .contents-3NembX{
+                    .contents__322f4{
                         color: $AccentLight3;
                         &:hover{
                             text-decoration: underline;
@@ -105,7 +105,7 @@
             }
 
             // Icons
-            .field-21XZwa{
+            .field__69fa0{
                 position: relative;
                 &::before{
                     position: absolute;
@@ -136,125 +136,24 @@
 
         }
     }
-    // Password and auth
-    .userSettingsSecurity-2kODPN{
-        .sectionTitle-LdcnyP h2{
-            @include TypeBodyLarge;
-            margin-bottom: 8px;
-        }
-        > .children-2C96Ex{
-            // Change Password
-            > div:first-of-type{
-                height: 62px;
-                padding: 8px 16px;
-                background-color: $CardBackgroundFillColorDefault;
-                border: 1px solid $CardStrokeColorDefault;
-                border-radius: 4px;
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items: center;
-            }
-            .changePasswordButton-3j5UVD{
-                margin-bottom: 0;
-            }
-
-            // 2FA
-            > div > .flexChild-3PzYmX{
-                // border: 1px solid red;
-                margin-top: 8px;
-                > div{
-                    > h3{
-                        margin: 0;
-                        padding: 16px 16px 4px 16px;
-                        background-color: $CardBackgroundFillColorDefault;
-                        border: 1px solid $CardStrokeColorDefault;
-                        border-bottom: 0;
-                        border-radius: 4px 4px 0 0;
-                    }
-                    > .description-foE_WP{
-                        margin: 0;
-                        padding: 0 16px 8px 16px;
-                        background-color: $CardBackgroundFillColorDefault;
-                        border: 1px solid $CardStrokeColorDefault;
-                        border-top: 0;
-                        border-bottom: 0;
-                        color: $TextFillColorSecondary;
-                    }
-                    > .flex-2S1XBF{
-                        margin-bottom: 0;
-                        padding: 16px;
-                        background-color: $CardBackgroundFillColorDefault;
-                        border: 1px solid $CardStrokeColorDefault;
-                        border-top: 0;
-                        border-radius: 0 0 4px 4px;
-                        justify-content: flex-end;
-                        .flexChild-3PzYmX{
-                            margin-right: 0;
-                            flex: unset !important; // Override inline
-                        }
-                    }
-
-                    // SMS backup auth
-                    > .marginTop40-Q4o1tS{
-                        margin-top: 8px;
-                        padding: 16px;
-                        background-color: $CardBackgroundFillColorDefault;
-                        border: 1px solid $CardStrokeColorDefault;
-                        border-radius: 4px;
-                        .description-30xx7u{
-                            color: $TextFillColorSecondary;
-                        }
-                        .children-2C96Ex{
-                            .flex-2S1XBF{
-                                justify-content: flex-end;
-                            }
-                            button:last-child{
-                                margin-left: 8px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        // Remove divider between SMS backup and delete account
-        ~ .divider-3nqZNm{
-            display: none;
-            ~ .marginTop40-Q4o1tS{
-                margin-top: 8px;
-                margin-bottom: 8px;
-                padding: 16px;
-                background-color: $CardBackgroundFillColorDefault;
-                border: 1px solid $CardStrokeColorDefault;
-                border-radius: 4px;
-                .buttonContainer-cmXa0P{
-                    padding-top: 16px;
-                    justify-content: flex-end;
-                    button:first-child{
-                        margin-right: 8px;
-                    }
-                }
-            }
-        }
-    }
-    // 2FA backup codes
-    .backupCode-QOE1Yz{
-        .checked-1pZh2h{
-            color: $ControlFillColorDisabled;
-            text-decoration: line-through;
-        }
-    }
 
     // User profile
     &#profile-customization-tab{
-        .heading-lg-semibold-14ouVv{
+        .heading-lg-semibold__58a54{
             @include TypeTitle;
+        }
+
+        // Fix large nickname text in profile preview
+        // This fixes a Discord bug
+        .userText_c26b46{
+            h4{
+                @include TypeSubtitle;
+            }
         }
     }
     // About me
-    .channelTextArea-1VQBuV{
-        .bioTextArea-dDGOeC{
+    .channelTextArea__648e5{
+        .bioTextArea_f46f71{
             height: auto;
             background-color: $ControlFillColorDefault;
             border: 1px solid;
@@ -262,7 +161,7 @@
             border-color: $ControlStrokeColorDefault;
             border-radius: 4px;
             // Set a static emoji icon
-            .emojiButton-3FRTuj{
+            .emojiButton__176c8{
                 margin: 0 4px 0 0;
                 &::before{
                     content: "\E76E"; //Emoji2
@@ -270,15 +169,12 @@
                     @include FontIconFluent;
                     font-size: 16px;
                 }
-                &.emojiButtonHovered-s44uQ8::before{
+                &.emojiButtonHovered__7519c::before{
                     color: $TextFillColorPrimary;
-                }
-                .contents-3NembX{
-                    display: none;
                 }
             }
         }
-        .characterCount-8yNPfb{
+        .characterCount__7e076{
             top: -24px;
             bottom: unset;
         }
@@ -286,27 +182,20 @@
 
     // Authorised apps
     // Banner
-    .formNotice-2nS8ey{
+    .formNotice__0a16b{
         background-color: $SystemFillColorAttentionBackground;
         border: 1px solid $CardStrokeColorDefault;
-        .title-3hptVQ{
-            @include TypeBodyStrong;
-            color: $TextFillColorPrimary;
-        }
-        .formText-2ngGjI{
+        .formText__20efd{
             @include TypeBody;
             color: $TextFillColorPrimary;
         }
     }
     // Apps
-    .authedApp-8q3NA9{
+    .authedApp__71a52{
         background-color: $SystemFillColorAttentionBackground;
         border: 1px solid $CardStrokeColorDefault;
-        .title-3hptVQ{
-            @include TypeBodyStrong;
-        }
-        .permission-CbNHIg{
-            .permissionCheckmark-ji-OoY{
+        .permission__8fb49{
+            .permissionCheckmark__6860a{
                 width: 16px;
                 height: 16px;
                 margin-right: 8px;
@@ -328,26 +217,18 @@
         }
     }
 
-    // User Profile
-    // Reemove background from profile colour
-    .buttonsContainer-3rygH4{
-        background-color: unset;
-        border: unset;
-    }
-
-
     // Connections
     // List of services
-    .connectContainer-1hylYM{
+    .connectContainer_e331e3{
         background-color: $SystemFillColorAttentionBackground;
         border: 1px solid $CardStrokeColorDefault;
         border-radius: 4px;
         // Header
-        .connectHeader-2VkFiv{
+        .connectHeader__95e44{
             @include TypeBodyStrong;
         }
         // Account button
-        .accountButtonInner-33vCDY{
+        .accountButtonInner__00bdd{
             background-color: $ControlFillColorDefault;
             border: 1px solid $ControlStrokeColorDefault;
             &:hover{
@@ -360,36 +241,36 @@
     }
 
     // Connection
-    .connection-YOVI9j{
+    .connection__6dbd8{
         background-color: $SystemFillColorAttentionBackground;
         border: 1px solid $CardStrokeColorDefault;
         border-radius: 4px;
-        .connectionHeader-Ixbb1s{
+        .connectionHeader__2b82f{
             padding: 16px;
             background-color: $SystemFillColorAttentionBackground;
             border-bottom: 1px solid $CardStrokeColorDefault;
             border-radius: 4px 4px 0 0;
-            .connectionAccountValue-YkFI6F{
+            .connectionAccountValue_a30590{
                 margin-left: 16px;
                 @include TypeBodyStrong;
             }
-            .connectionAccountLabel-28GEPk{
+            .connectionAccountLabel__76a4f{
                 margin-left: 16px;
                 @include TypeCaption;
             }
         }
-        .connectionOptionsWrapper-3aVWcp{
+        .connectionOptionsWrapper__1b820{
             padding: 16px 16px 0 16px;
         }
-        .connectionOptionSwitch-y1S-cR{
+        .connectionOptionSwitch_e439d0{
             padding: 0;
             background-color: transparent;
             border: 0;
         }
-        .title-2dsDLn{
+        .title__8b9e4{
             @include TypeBody;
         }
-        .integration-1qC-fv{
+        .integration_b27c42{
             background-color: $SystemFillColorAttentionBackground;
             border: 1px solid $CardStrokeColorDefault;
             border-radius: 4px;
@@ -398,31 +279,60 @@
 
     // Privacy & Safety
     &#privacy-\&-safety-tab{
-        .container-1zDvAE{
+        // 'In-game rewards (aka Drops)' (Beta)
+        .container__7ad1e {
             margin-bottom: 8px;
             padding: 16px;
             background-color: $SystemFillColorAttentionBackground;
             border: 1px solid $CardStrokeColorDefault;
             border-radius: 4px;
-            .title-2dsDLn{
+            .title__8b9e4{
                 @include TypeBody;
             }
-            .description-30xx7u{
+            .description_b0e07c {
                 @include TypeCaption;
                 color: $TextFillColorSecondary;
             }
-            .divider-_0um2u{
-                display: none;
-            }
         }
-        .dependentSetting-2ewJ4W{
+        .dependentSetting__5c861{
             padding-left: 0;
+        }
+    }
+
+    // Family Centre
+    &#family-center-tab{
+        // Activity tab boxes
+        .container_d5dec4,
+        .container__7d3e2,
+        .container__5a2c3,
+        .box__6431e {
+            background-color: $SystemFillColorAttentionBackground;
+            border: 1px solid $CardStrokeColorDefault;
+            border-radius: 4px;
+            box-shadow: none;
+        }
+        // Make the layout full-width
+        .max-width_dfc421,
+        .max-width__1da95{
+            max-width: unset;
+        }
+
+        // My family tab boxes
+        .box__6431e {
+            background-color: $SystemFillColorAttentionBackground;
+            border: 1px solid $CardStrokeColorDefault;
+            border-radius: 4px;
+            box-shadow: none;
+        }
+        // Make the layout full-width
+        .container_cf8001{
+            max-width: unset;
         }
     }
 
     // Subscriptions
     &#subscriptions-tab{
-        .sectionTitle-3vprZ6{
+        .sectionTitle_f81028{
             margin-bottom: 32px;
             @include TypeTitle;
         }
@@ -431,7 +341,7 @@
     // Billing
     &#billing-tab{
         // Only apply to the main header, not the secondary "Transaction History" header
-        .title-lXcL8p .flex-2S1XBF{
+        .title__1b7e8 .flex_f18b02{
             margin-bottom: 32px;
             @include TypeTitle;
             // Remove lock icon
@@ -443,22 +353,22 @@
 
     // Appearance
     // Chat preview
-    .preview-QJ3OG3{
+    .preview__30ef4{
         background-color: $LayerFillColorDefault;
         border: 1px solid $CardStrokeColorDefault;
     }
     // Theme
-    .presets-2zm9Ir{
+    .presets__4073b{
         padding: 16px;
         margin-bottom: 0;
     }
     // Nitro themes
-    .premiumFeatureBorder-1i95si{
+    .premiumFeatureBorder__6ac04{
         margin: 0;
         background: transparent;
         border: 0;
-        .headings-1UkJbq{
-            .title-1ezOSD::after{
+        .headings__5608a{
+            .title_de34af::after{
                 content: "Fluent Discord - Colour themes are not supported";
                 padding-left: 4px;
                 color: $TextFillColorDisabled;
@@ -468,18 +378,18 @@
 
     // a11y
     // Custom colours preview
-    .preview-3k9WhO{
+    .preview__22e05{
         background-color: $LayerFillColorDefault;
         border: 1px solid $CardStrokeColorDefault;
-        .previewMessage-2g_aBv{
+        .previewMessage__4d747{
             background-color: $LayerFillColorDefault;
         }
     }
 
     // Voice & Video
-    .userSettingsVoice-1fEtsL{
+    &#voice-\&-video-tab{
         // Fixes no spacing between video background and advanced sections
-        .title-3hptVQ.marginBottom20-315RVT{
+        .h1_dc86b3.title__1b7e8{
             margin-top: 24px;
         }
     }
@@ -487,7 +397,7 @@
     // Notifications
     // Fix unsub from marketing emails button
     &#notifications-tab{
-        .marketingUnsubscribeButton-3TwiWy{
+        .marketingUnsubscribeButton__9bf83{
             padding-right: 12px;
             padding-left: 12px;
         }
@@ -495,13 +405,13 @@
 
     // Keybinds
     // Warning
-    .container-3jbRo5.warning-RBGtx2{
+    .container_b9efb5.warning__4da7a{
         height: 48px;
         padding: 8px 16px;
         background-color: $CardBackgroundFillColorDefault;
         border: 1px solid $CardStrokeColorDefault;
         @include TypeBody;
-        .iconDiv-3ISDKO{
+        .iconDiv__12e4d{
             align-self: center;
             svg{
                 width: 16px;
@@ -509,19 +419,20 @@
                 color: $SystemFillColorAttention;
             }
         }
-        .text-2iTkaw{
+        .text__5191a{
             margin-left: 16px;
         }
 
-        ~.flexChild-3PzYmX{
+        // Align the Add keybind button with middle of warning
+        ~.flexChild__3da10{
             align-self: center;
         }
     }
     // Default keybinds
-    .defaultKeybindGroup-36Wpyv{
+    .defaultKeybindGroup_fe8d85{
         border: 1px solid $CardStrokeColorDefault;
     }
-    .defaultKeybindGroupHeader-18_214{
+    .defaultKeybindGroupHeader__3c306 {
         margin-bottom: 0;
         padding: 16px;
         background-color: $CardBackgroundFillColorDefault;
@@ -530,23 +441,23 @@
         @include TypeBody;
         text-transform: none;
     }
-    .defaultKeybindGroupDescription-3c3NhW{
+    .defaultKeybindGroupDescription_e38653{
         margin-bottom: 0;
         padding: 0 16px 16px 16px;
         background-color: $CardBackgroundFillColorDefault;
         @include TypeCaption;
         color: $TextFillColorSecondary;
     }
-    .defaultKeybind-1rEiTa{
+    .defaultKeybind__48ba0{
         height: 64px;
         padding: 0 16px;
         background-color: $CardBackgroundFillColorSecondary;
         border-top: 1px solid $DividerStrokeColorDefault;
-        .size16-rrJ6ag{
+        .text-md-normal__6e567{
             @include TypeBody;
             color: $TextFillColorPrimary;
         }
-        .keybindShortcut-3zF1P9 span{
+        .defaultKeybindShortcutGroup__08339 span{
             background-color: transparent;
             border: 1px solid $ControlStrokeColorDefault;
             box-shadow: inset 0 -4px 0 $ControlStrokeColorDefault;
@@ -554,7 +465,7 @@
         }
     }
     // Catches the first keybind
-    .children-1xdcWE > .defaultKeybind-1rEiTa{
+    .children_aba8cb > .defaultKeybind__48ba0{
         border: 1px solid $CardStrokeColorDefault;
         border-radius: 4px;
     }
@@ -562,18 +473,18 @@
     // Registered games
     &#game-activity-tab{
         // Active game
-        .activeGame-1OdxzI{
-            &.notDetected-M3Ghh2{
+        .activeGame__6d821{
+            &.notDetected__14b92{
                 background-color: $SystemFillColorAttentionBackground;
                 border: 1px solid $CardStrokeColorDefault;
                 border-radius: 4px;
             }
-            &.nowPlaying-3UpuKc{
+            &.nowPlayingAdd_ab1001{
                 background-color: $SystemFillColorSuccesBackground;
             }
         }
         // Add new game
-        .nowPlayingAdd-3I4RbE{
+        .nowPlayingAdd_ab1001{
             width: 100%;
             padding: 8px 16px;
             background-color: $CardBackgroundFillColorDefault;
@@ -583,13 +494,13 @@
                 color: $TextFillColorPrimary;
                 line-height: 32px;
             }
-            .button-ejjZWC{
+            .button__581d0{
                 float: right;
             }
         }
 
         // The games list
-        .game-2f2vPC{
+        .game__19f4b{
             padding: 12px 16px;
             background-color: $CardBackgroundFillColorDefault;
             border: 1px solid $CardStrokeColorDefault;
@@ -608,36 +519,28 @@
         }
 
         // App name
-        .gameName-zbZetm{
+        .gameName_c1c8a6{
             @include TypeBodyStrong;
         }
         // Last played
-        .lastPlayed-1jum9A{
+        .lastPlayed__0b4ef{
             color: $TextFillColorSecondary;
-            .default-rFvAvS{
+            .default__74311{
                 @include TypeCaption;
                 strong{
                     font-weight: normal;
                 }
             }
-            .hovered-20u3oh{
+            .hovered__5a165{
                 @include FontMonospace;
                 @include TypeCaption;
             }
         }
-        // Overlay status
-        .overlayStatusText-In0YrK{
-            margin-right: 8px;
-            color: $TextFillColorSecondary;
-            @include TypeBody;
-            text-transform: none;
-            text-align: right;
-        }
-        .overlayToggleIcon-1WRcQ9{
+        .toggleContainer__3a2a5{
             margin-right: 8px;
         }
         // Remove button
-        .removeGame-3V7nss{
+        .removeGame__4f4cb{
             position: relative;
             top: unset;
             right: unset;
@@ -648,14 +551,6 @@
             &:hover{
                 filter: unset;
             }
-        }
-    }
-
-    // Game Overlay
-    &#overlay-tab{
-        // Remove extra border from enable container
-        .container-31PmuA[style="margin-top: 16px;"]{
-            margin-top: 0 !important;
         }
     }
 }

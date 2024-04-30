@@ -1,23 +1,23 @@
-.theme-dark .channelTextArea-1FufC0{
+.theme-dark .channelTextArea_c2094b{
     &:focus-within{
-        .autocomplete-3NRXG8{
+        .autocomplete__743a5{
             border-color: $ControlStrokeColorDefault;
         }
     }
 }
 
-.theme-dark .autocomplete-3NRXG8{
+.theme-dark .autocomplete__743a5{
     bottom: calc(100% + 4px);
     box-shadow: none;
     background-color: $CardStrokeColorDefaultSolid;
     border: 1px solid $ControlStrokeColorDefault;
     border-radius: 4px;
 
-    .rail-1BiMhk{
+    .rail_ad1aea{
         background-color: $CardStrokeColorDefault;
     }
 
-    .section-Dep3No{
+    .section__4da0b{
         > div[role=button]{
             width: 32px;
             height: 32px;
@@ -35,16 +35,16 @@
                 height: 24px;
                 margin: 4px;
             }
-            .wrapper-1wwiGV{
+            .wrapper_eb6fe5{
                 padding: 0 !important; // Override inline
             }
         }
     }
 
     // Commands header
-    .categoryHeader-OpJ1Ly{
+    .categoryHeader__70c8e{
         background-color: $CardStrokeColorDefaultSolid;
-        .headerLabel-1g790w{
+        .headerLabel_febbb2{
             @include TypeBody;
             color: $TextFillColorPrimary;
             text-transform: none;
@@ -52,7 +52,7 @@
     }
 
     // Commands matching: header
-    .contentTitle-3CylD3{
+    .contentTitle_b6c2bb{
         @include TypeBody;
         color: $TextFillColorPrimary;
         text-transform: none;

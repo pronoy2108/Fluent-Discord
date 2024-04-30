@@ -1,66 +1,62 @@
-.theme-dark .content-1jQy2l{
-    // Tab bar
-    .tabBar-1_P75h{
-        border: 0;
-        .tabBarItem-onx_ng{
-            @include TypeBody;
-            color: $TextFillColorPrimary;
-            border: 0;
-            &:hover{
-                color: $TextFillColorSecondary;
-            }
-            &.selected-1sf9UK{
-                border: 0;
-                &::before{
-                    content: "";
-                    width: 16px;
-                    height: 3px;
-                    position: absolute;
-                    bottom: 0;
-                    left: calc(50% - 8px);
-                    background-color: $AccentTextFillColorPrimary;
-                    border-radius: 999px;
-                }
-            }
-            .textBadge-1fdDPJ{
-                background-color: $SystemFillColorSolidNeutralBackground !important; // Override inline
-                @include TypeCaption;
-            }
-        }
+// Channels & Roles
+.theme-dark .header__71942 {
+    background-color: transparent;
+    .iconWrapper_de6cd1{
+        display: none;
+    }
+}
+.theme-dark .content__01e65 {
+    height: calc(100% - 1px);
+    padding: 0;
+    border-top: 1px solid $CardStrokeColorDefault;
+    border-left: 1px solid $CardStrokeColorDefault;
+    border-radius: 8px 0 0 0;
+    &::before{
+        content: unset;
     }
 
-    .container-27tlK1{
-        background-color: $CardBackgroundFillColorDefault;
+    // Customise tab
+    // Customisation questions
+    .prompt__1b100{
+        background-color: $LayerFillColorDefault;
+        border-top: 1px solid $CardStrokeColorDefault;
+        border-left: 1px solid $CardStrokeColorDefault;
+        border-radius: 8px 0 0 0;
     }
-    .channelRow-4X_3fi{
+    // My profile
+    .profileCard__1d74b{
+        background-color: $LayerFillColorDefault;
+        border-top: 1px solid $CardStrokeColorDefault;
+        border-left: 1px solid $CardStrokeColorDefault;
+        border-radius: 8px 0 0 0;
+    }
+
+    // Browse channels
+    .channelRow__538ef {
         background-color: $CardBackgroundFillColorDefault;
         border-width: 1px 1px 0 1px;
         border-style: solid;
         border-color: $CardStrokeColorDefault;
-        &.firstChannel-3vAGDY{
+        &.firstChannel_c06b53{
             border-radius: 4px 4px 0 0;
         }
-        &.lastChannel-21yyBC{
+        &.lastChannel__0a967{
             border-radius: 0 0 4px 4px;
         }
     }
-    .separator-3vTHjS{
+    .separator__68570{
         display: none;
     }
 
     // Fix for channel checkboxes not displaying
-    .channelActions-2FvDct .checkbox-1LuCGM{
+    .channelActions__04de2 .checkbox_fcf2ad{
         display: block;
     }
 
     // Category row has some issues
-    .categoryRow-2VIZ6m{
-        .checkbox-f1HnKB{
-            svg{
-                width: 12px;
-                height: 12px;
-                margin: 0;
-            }
+    .categoryRow__8a080{
+        .checkbox_fcf2ad{
+            display: block;
         }
     }
 }

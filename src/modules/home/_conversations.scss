@@ -1,6 +1,6 @@
-.theme-dark .privateChannels-oVe7HL{
-    .link-39sEB3[href="/channels/@me"]{
-        .avatar-1HDIsL{
+.theme-dark .privateChannels__9b518{
+    .link__3a950[href="/channels/@me"]{
+        .avatar__7bd22{
             &::before{
                 content: "\E13D"; // Contact
                 @include FontIconFluent;
@@ -11,53 +11,45 @@
             }
         }
     }
-    .link-39sEB3[href="/store"]{
+    .link__3a950[href="/store"]{
         display: none;
     }
 
-    .interactive-iyXY_x{
+    .interactive__3e804{
         &:hover,
         &:focus-within{
             background-color: $SubtleFillColorSecondary;
             box-shadow: inset 0 0 0 1px $SubtleFillColorSecondary;
-            .name-2m3Cms{
+            .name_f842e4{
                 color: $TextFillColorPrimary;
             }
         }
-        &.selected-26oxtA{
+        &.selected__37292{
             background-color: $SubtleFillColorSecondary;
         }
 
-        .layout-1LjVue{
+        .layout__59abc{
             padding: 0 8px;
         }
 
         // Name
-        .name-2m3Cms{
+        .name_f842e4{
             @include TypeBody;
             color: $TextFillColorSecondary;
         }
         // Activity
-        .activityText-ev7Z1T{
+        .activityText__56d3b{
             @include TypeCaption;
             color: $TextFillColorSecondary;
         }
     }
 
     // DMs header
-    .privateChannelsHeaderContainer-1UWASm{
+    .privateChannelsHeaderContainer_b22dc9 {
         height: auto;
         padding: 12px;
         color: $TextFillColorPrimary;
         @include TypeBody;
         text-transform: none;
-    }
-
-    // Remove store and discovery tabs
-    .channel-1Shao0{
-        &[href="/store"],
-        &[href="/discovery"]{
-            display: none;
-        }
     }
 }
